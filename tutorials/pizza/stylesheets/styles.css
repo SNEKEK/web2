@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /*to easily deal with sticky footer*/
+    display: flex;
+    flex-direction: column;
+    background-image : url(../img/pizza.gif);
+    opacity: 0.7;
+    background-size : cover;
+}
+
+
+header{
+    text-align: center;
+    color: chocolate;
+    background-color: black;
+}
+
+main{
+    text-align: center;
+    /*to easily deal with sticky footer:
+    grow the main to fill the space*/
+    flex: 1 0 auto;
+}
+
+footer{
+    background-color: black ;
+    text-align: left;
+    display: flex;
+}
+
+footer p{
+    color: grey;
+}
+
+#footer_left {
+    width: 80vw;
+    padding-left: 20px;
+}
+
+#footer_right {
+    width: 20vw;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+}
+
+#footer_right img {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+footer h1{
+    color: white;
+}
